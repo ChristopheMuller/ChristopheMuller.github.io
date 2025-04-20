@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://christophemuller.github.io/sitemap.xml
