@@ -5,21 +5,13 @@ function Projects() {
   const projects = [
     {
       id: 1,
-      title: 'Project Alpha',
-      description: 'A web application built using React and Node.js for managing tasks. Features user authentication and real-time updates.',
-      liveLink: '#', // Replace with actual link
-      githubLink: '#', // Replace with actual link
-      image: 'https://via.placeholder.com/300x200?text=Project+Alpha' // Placeholder image
+      title: 'Mini-enterprise Stroboo (CEO)',
+      description: 'As CEO, I organized and managed a 20-member high-school-based mini-enterprise that sold reusable, bamboo-made straws. This initiative aimed to fight the environmental effects of plastic and to respond to EU policy. My role involved strategic organization and decision-making for the enterprise.',
+      liveLink: '#', // Placeholder, update if you have a website for this
+      githubLink: '#', // Placeholder, update if you have a public repo
+      image: 'https://via.placeholder.com/300x200?text=Stroboo+Project' // Placeholder image
     },
-    {
-      id: 2,
-      title: 'Project Beta',
-      description: 'An e-commerce front-end mock-up demonstrating responsive design and state management with Redux.',
-      liveLink: '#',
-      githubLink: '#',
-      image: 'https://via.placeholder.com/300x200?text=Project+Beta'
-    },
-    // Add more projects here
+    // You can add more personal projects here if you have any side projects with code/demos!
   ];
 
   return (
