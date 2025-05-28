@@ -1,0 +1,26 @@
+{
+  "homepage": "https://ChristopheMuller.github.io",
+  "name": "temp", // This 'name' property is now 'temp' or whatever you chose
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    // ...
+  },
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    // ...
+  },
+  "browserslist": {
+    // ...
+  },
+  "devDependencies": {
+    "gh-pages": "^X.Y.Z" // Version number will vary
+  }
+}
