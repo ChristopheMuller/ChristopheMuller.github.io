@@ -4,11 +4,12 @@ import Header from './components/Header';
 import Hero from './components/Hero';
 import About from './components/About';
 import Journey from './components/Journey';
-import MapComponent from './components/MapComponent'; // New import
 import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
-import GameOfLife from './components/GameOfLife'; // Import Game of Life component
+import GameOfLife from './components/GameOfLife';
+import KMeansVisualizer from './components/KMeansVisualizer';
+import RegressionFitter from './components/RegressionFitter'; // New import
 import Footer from './components/Footer';
 
 function App() {
@@ -19,11 +20,11 @@ function App() {
         <Hero />
         <About />
         <Journey />
-        <MapComponent /> {/* Add the MapComponent here */}
-        <Skills />
         <Projects />
         <Contact />
-        <GameOfLife /> {/* Add the Game of Life component */}
+        {/* <GameOfLife />
+        <KMeansVisualizer />
+        <RegressionFitter /> */}
       </main>
       <Footer />
     </div>

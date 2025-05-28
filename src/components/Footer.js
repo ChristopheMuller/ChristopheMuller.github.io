@@ -7,7 +7,7 @@ function Footer() {
     <footer className="footer">
       <p>&copy; {currentYear} Christophe Muller. All rights reserved.</p>
       <div className="social-links">
-        <a href="https://www.linkedin.com/in/christophe-muller" target="_blank" rel="noopener noreferrer">LinkedIn</a> | [cite: 1]
+        <a href="https://www.linkedin.com/in/christophe-muller" target="_blank" rel="noopener noreferrer">LinkedIn</a>
         <a href="https://github.com/ChristopheMuller" target="_blank" rel="noopener noreferrer">GitHub</a>
       </div>
     </footer>
