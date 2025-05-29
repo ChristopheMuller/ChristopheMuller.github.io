@@ -8,10 +8,10 @@ function GoogleChartEmbed() {
     <section id="google-chart" className="my-0 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-purple-50 to-pink-50 text-gray-800">
       <div className="max-w-4xl mx-auto text-center">
         <h2 className="text-4xl font-extrabold mb-0 text-purple-800 leading-tight">
-          My 1000km Goal Progress
+          My 1000km Running Goal
         </h2>
         <p className="text-lg sm:text-xl text-gray-700 mb-0">
-          My goal for this year is to reach 1000 km. Below, you'll find a plot showing my accumulated kilometers over time.
+          My goal for this year is to run 1000 km. Below, you'll find a plot showing my accumulated kilometers over time.
         </p>
         <div className="max-w-xl mx-auto my-0" style={{ height: '300px'}}> {/* Set a fixed height for the container and center it */}
           <iframe
