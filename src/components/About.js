@@ -35,7 +35,7 @@ function About() {
 
         {/* Fifth paragraph: Future plans (PhD) */}
         <p className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
-          In September 2025, I will begin my DPhil (PhD) in Statistics at the University of Oxford, where I will be researching Causality under the supervision of <a href="https://www.stats.ox.ac.uk/~evans/" target="_blank">Robin Evans</a>.   
+          In September 2025, I will begin my DPhil (PhD) in Statistics at the University of Oxford, where I will be researching Causality under the supervision of <a href="https://www.stats.ox.ac.uk/~evans/" target="_blank">Robin Evans</a>, as part of the StatML CDT.   
         </p>
 
       </div>
