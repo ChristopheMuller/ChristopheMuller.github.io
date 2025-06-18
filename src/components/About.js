@@ -15,34 +15,29 @@ function About() {
       <div className="max-w-3xl mx-auto space-y-6 text-lg leading-relaxed">
         {/* First paragraph: Introduction and expertise */}
         <p className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
-          I'm Christophe, a dedicated professional with a strong academic background in Statistics and Econometrics.
-          My expertise lies in applying diverse statistical and mathematical methods and tools to real-world challenges, with a focus on machine learning, statistical modeling, and data analysis.
+          I am a statistics researcher working with <a href="https://juliejosse.com/" target="_blank">Julie Josse</a>, <a href="https://erwanscornet.github.io/" target="_blank">Erwan Scornet</a> and <a href="https://jeffnaef.github.io/" target="_blank">Jeffrey Näf</a> on missing data imputation and classification with incomplete datasets, as part of the INRIA <a href="https://team.inria.fr/premedical/" target="_blank">PreMeDICaL</a> team.
         </p>
 
         {/* Second paragraph: Current role */}
         <p className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
-          Currently, I'm working as a Research Engineer at INRIA - PreMeDICAL, focusing on missing data imputation and classification with incomplete datasets.
+          
         </p>
 
         {/* Third paragraph: Academic journey */}
         <p className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
-          My academic journey includes a Bachelor's in Econometrics and Operations Research from Maastricht University (GPA: 9.37/10, Summa Cum Laude), and a Master's in Statistics from ETH Zürich (GPA: 5.75/6, Distinction). I've also had the privilege of studying abroad at UCLA and participating in the Bachelor Honours programme at Maastricht University.
+          My academic journey includes a Bachelor's in Econometrics and Operations Research from Maastricht University, and a Master's in Statistics from ETH Zürich. I've also had the privilege of studying abroad at UCLA.
         </p>
 
         {/* Fourth paragraph: Professional experience */}
         <p className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
-          I have experience contributing to the future of European banking supervision through cutting-edge technologies during my traineeship at the European Central Bank. I've also undertaken data-based projects to improve app user and revenue growth as a Junior Data Analyst at Hornet, Queer Social Network.
+          Previously, I contributed to the future of European banking supervision with new technologies as a trainee at the European Central Bank and worked as a Junior Data Analyst at Hornet, a queer social network.
         </p>
 
         {/* Fifth paragraph: Future plans (PhD) */}
         <p className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
-          In September 2025, I will embark on my DPhil (PhD) in Statistics at the University of Oxford, eager to delve deeper into advanced research.
+          In September 2025, I will begin my DPhil (PhD) in Statistics at the University of Oxford, where I will be researching Causality under the supervision of <a href="https://www.stats.ox.ac.uk/~evans/" target="_blank">Robin Evans</a>.   
         </p>
 
-        {/* Sixth paragraph: Hobbies and personal achievements */}
-        <p className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
-          Outside of my professional pursuits, I am a six-time semi-finalist of the Mathematical Olympiad of Belgium and enjoy discovering citizen and political life through the Communal Council of Children. I also enjoy hiking, playing the piano, and learning new languages.
-        </p>
       </div>
     </section>
   );

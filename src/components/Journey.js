@@ -35,8 +35,8 @@ function Journey() {
     },
     {
       year: 'Sept 2025 - onwards',
-      title: 'DPhil (PhD) in Statistics at Oxford',
-      description: 'Commencing doctoral studies in Statistics at the University of Oxford, focusing on advanced research.',
+      title: 'DPhil in Statistics at Oxford',
+      description: 'Commencing doctoral studies in Statistics at the University of Oxford, working on generalization in causal inference.',
       icon: '📚'
     }
   ];

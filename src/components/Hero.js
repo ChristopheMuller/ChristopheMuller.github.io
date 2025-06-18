@@ -11,7 +11,7 @@ function Hero() {
       <div className="relative z-10 p-6 max-w-4xl mx-auto">
         {/* Main heading with large, bold text and shadow */}
         <h1 className="text-5xl sm:text-6xl lg:text-7xl font-extrabold mb-4 leading-tight drop-shadow-lg animate-fade-in-up">
-          Hi, I'm Christophe Muller!
+          Hi, I'm Chris(tophe) Muller!
         </h1>
         {/* Sub-heading with slightly smaller text */}
         <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold mb-8 text-blue-200 animate-fade-in-up delay-100">
@@ -19,8 +19,7 @@ function Hero() {
         </h2>
         {/* Descriptive paragraph */}
         <p className="text-lg sm:text-xl mb-12 max-w-2xl mx-auto animate-fade-in-up delay-200">
-          Welcome to my corner of the internet. I am passionate about statistical methods, deep learning,
-          and leveraging cutting-edge technologies to solve complex problems in various domains.
+          {/* not sure what to include here yet  */}
         </p>
       </div>
 
