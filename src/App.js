@@ -26,7 +26,6 @@ function App() {
         <MusicStats />
         {/* <GoogleSheetEmbed /> If you want to include the full sheet too */}
         <GoogleChartEmbed /> {/* <--- NEW COMPONENT USAGE */}
-        <Projects />
         <Contact />
       </main>
       <Footer />

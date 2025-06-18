@@ -42,3 +42,23 @@ h1, h2, h3 {
 .btn:hover {
   background-color: #0056b3;
 }
+
+/* Hyperlink styling */
+a {
+  color: #007bff; /* A pleasant blue for links */
+  text-decoration: none; /* Remove underline by default */
+  transition: color 0.3s ease, text-decoration 0.3s ease; /* Smooth transition for hover effects */
+}
+
+a:hover {
+  color: #0056b3; /* Darker blue on hover */
+  text-decoration: underline; /* Underline on hover for better discoverability */
+}
+
+a:visited {
+  color: #663399; /* A subtle purple for visited links */
+}
+
+a:active {
+  color: #ff4500; /* Orange-red when actively clicked */
+}
