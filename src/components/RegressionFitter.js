@@ -140,17 +140,20 @@ const RegressionFitter = () => {
 
   // Effect to initialize points on mount
   useEffect(() => {
-    // Define your list of initial points here
+    const canvas = canvasRef.current;
+    if (!canvas) return;
+
+    const { clientWidth: w, clientHeight: h } = canvas;
+
+    // Define your list of initial points here, now relative to canvas size
     const initialPoints = [
-      { x: 100, y: 105 },
-      { x: 110, y: 20 },
-      { x: 125, y: 120 },
-      { x: 170, y: 160 },
-      { x: 160, y: 162 },
-      { x: 350, y: 300 },
-      { x: 380, y: 275 },
-      { x: 850, y: 120 },
-      { x: 900, y: 100 },
+      { x: w * 0.1, y: h * 0.4 },
+      { x: w * 0.2, y: h * 0.2 },
+      { x: w * 0.3, y: h * 0.5 },
+      { x: w * 0.5, y: h * 0.8 },
+      { x: w * 0.6, y: h * 0.6 },
+      { x: w * 0.8, y: h * 0.3 },
+      { x: w * 0.9, y: h * 0.4 },
     ];
     setPoints(initialPoints);
   }, []); // Empty dependency array means it runs only once on mount

@@ -11,7 +11,7 @@ function Hero() {
       <div className="relative z-10 p-6 max-w-4xl mx-auto">
         {/* Main heading with large, bold text and shadow */}
         <h1 className="text-5xl sm:text-6xl lg:text-7xl font-extrabold mb-4 leading-tight drop-shadow-lg animate-fade-in-up">
-          Hi, I'm Chris(tophe) Muller!
+          Hi, I'm Christophe Muller!
         </h1>
         {/* Sub-heading with slightly smaller text */}
         <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold mb-8 text-blue-200 animate-fade-in-up delay-100">
