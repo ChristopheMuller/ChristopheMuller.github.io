@@ -23,6 +23,7 @@ function Header() {
           <li><a href="#about" onClick={() => setMenuOpen(false)}>About</a></li>
           <li><a href="#journey" onClick={() => setMenuOpen(false)}>Journey</a></li>
           <li><a href="#publications" onClick={() => setMenuOpen(false)}>Publications</a></li>
+          <li><a href="/ChristopheMuller-CV.pdf" target="_blank" rel="noopener noreferrer">CV</a></li>
           <li><a href="#contact" onClick={() => setMenuOpen(false)}>Contact</a></li>
         </ul>
       </nav>
