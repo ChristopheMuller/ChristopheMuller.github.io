@@ -23,13 +23,13 @@ const journeyEvents = [
   {
     year: '2022-2024',
     title: 'Master at ETH Zürich',
-    description: 'M.Sc. in Statistics with a distinction. Specialized in Deep Learning and Reinforcement Learning.',
+    description: 'M.Sc. in Statistics with a distinction: Statistical methods, Deep Learning and Reinforcement Learning.',
     icon: '🇨🇭'
   },
   {
     year: 'Oct 2024 - Sept 2025',
     title: 'Research Engineer at INRIA',
-    description: 'Working at INRIA - PreMeDICAL in Montpellier, France, with a research focus on missing data imputation.',
+    description: 'Working at INRIA - PreMeDICAL in Montpellier, France, with a research focus on missing data imputation and classification with missing data.',
     icon: '🇫🇷'
   },
   {
