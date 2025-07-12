@@ -10,7 +10,7 @@ import Contact from './components/Contact';
 // import KMeansVisualizer from './components/KMeansVisualizer';
 // import RegressionFitter from './components/RegressionFitter';
 // import GoogleSheetEmbed from './components/GoogleSheetEmbed'; // If you also have the full sheet embed
-import Publications from './components/Publications';
+import Research from './components/Research';
 import Footer from './components/Footer';
 
 function App() {
@@ -22,7 +22,7 @@ function App() {
         <About />
         <Journey />
         {/* <GoogleSheetEmbed /> If you want to include the full sheet too */}
-        <Publications />
+        <Research />
         <Contact />
       </main>
       <Footer />

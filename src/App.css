@@ -500,3 +500,141 @@ html, body {
 .footer .social-links a:hover {
   text-decoration: underline;
 }
+
+/* Projects Section */
+.projects-section {
+  padding: 60px 20px;
+  background-color: #ffffff;
+}
+
+.projects-section h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2.5em;
+  color: #2c3e50;
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.project-card {
+  background-color: #fdfdfd;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.project-card h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+.project-card p {
+  margin-bottom: 15px;
+  color: #555;
+}
+
+.project-links {
+  margin-top: 15px;
+}
+
+.project-btn {
+  display: inline-block;
+  margin-right: 10px;
+  padding: 8px 15px;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.project-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Research Section */
+.research-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.research-item {
+  background-color: #fdfdfd;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: left;
+  position: relative;
+}
+
+.research-item h3 {
+  margin-top: 0;
+  color: #333;
+  padding-right: 120px; /* Add padding to avoid overlap with stamp */
+}
+
+.research-item p {
+  margin-bottom: 15px;
+  color: #555;
+}
+
+.research-links {
+  margin-top: 15px;
+}
+
+.research-btn {
+  display: inline-block;
+  margin-right: 10px;
+  padding: 8px 15px;
+  background-color: #007bff;
+  color: white !important;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.research-btn:hover {
+  background-color: #0056b3;
+}
+
+.research-stamp {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  padding: 3px 10px;
+  font-size: 0.8em;
+  font-weight: bold;
+  border-radius: 4px;
+  text-transform: uppercase;
+  color: white;
+}
+
+.research-stamp.journal {
+  background-color: #84a59d; /* Green */
+}
+
+.research-stamp.conference {
+  background-color: #f5cac3; /* Blue */
+}
+
+.research-stamp.preprint {
+  background-color: #f6bd60; /* Orange */
+}
