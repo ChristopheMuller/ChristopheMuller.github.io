@@ -45,7 +45,7 @@ function Research() {
   };
 
   return (
-    <section id="research" className="projects-section">
+    <section id="research" className="research-section">
       <h2>Research</h2>
       <div className="research-container">
         {publications.map(pub => (

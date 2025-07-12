@@ -507,6 +507,11 @@ html, body {
   background-color: #ffffff;
 }
 
+.research-section {
+  padding: 60px 20px;
+  background-color: transparent;
+}
+
 .projects-section h2 {
   text-align: center;
   margin-bottom: 40px;
@@ -577,8 +582,8 @@ html, body {
 }
 
 .research-item {
-  background-color: #fdfdfd;
-  border: 1px solid #e0e0e0;
+  background-color: transparent;
+  border: none;
   border-radius: 8px;
   padding: 20px;
   text-align: left;
