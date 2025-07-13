@@ -9,7 +9,8 @@ function Research() {
       authors: 'G. Arcieri, G. Duthé, C. Muller, D. Haener, K. Papakonstantinou, D. Straub, E. Chatzi',
       venue: '14th International Conference on Structural Safety and Reliability - ICOSSAR25',
       link: 'https://www.scipedia.com/public/Arcieri_et_al_2025a',
-      stamp: 'Conference'
+      stamp: 'Conference',
+      repo: 'https://github.com/ChristopheMuller/MARL_optimal_maintenance_graph_railway_network'
     },
     {
       id: 2,
@@ -17,7 +18,8 @@ function Research() {
       authors: 'C. Muller, E. Scornet, J. Josse',
       venue: 'Preprint on HAL',
       link: 'https://hal.science/view/index/docid/5150753',
-      stamp: 'Preprint'
+      stamp: 'Preprint',
+      repo: 'https://github.com/ChristopheMuller/logistic_with_NAs'
     },
     // {
     //   id: 3,
@@ -56,6 +58,9 @@ function Research() {
             <p><em>{pub.venue}</em></p>
             <div className="research-links">
               <a href={pub.link} target="_blank" rel="noopener noreferrer" className="research-btn">Read Paper</a>
+              {pub.repo && (
+                <a href={pub.repo} target="_blank" rel="noopener noreferrer" className="research-btn github">GitHub</a>
+              )}
             </div>
           </div>
         ))}

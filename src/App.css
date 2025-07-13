@@ -620,6 +620,14 @@ html, body {
   background-color: #0056b3;
 }
 
+.research-btn.github {
+  background-color: #333;
+}
+
+.research-btn.github:hover {
+  background-color: #555;
+}
+
 .research-stamp {
   position: absolute;
   top: 15px;
