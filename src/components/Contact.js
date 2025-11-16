@@ -11,7 +11,7 @@ function Contact() {
         <p>Email: mullerchristophe21[~at~]gmail[~dot~]com</p>
         <p>LinkedIn: <a href="https://www.linkedin.com/in/christophe-muller" target="_blank" rel="noopener noreferrer">linkedin.com/in/christophe-muller</a></p>
         <p>GitHub: <a href="https://github.com/ChristopheMuller" target="_blank" rel="noopener noreferrer">github.com/ChristopheMuller</a></p>
-        <p>CV: <a href="/ChristopheMuller-CV.pdf" target="_blank" rel="noopener noreferrer">Download CV</a></p>
+        <p>CV: <a href="https://drive.google.com/file/d/1kX6Ipb34hY47925-Hjmurl4MtMpvPmlz/view?usp=sharing" target="_blank" rel="noopener noreferrer">Download CV</a></p>
         {/* You can add a simple form later if you wish */}
       </div>
       <RegressionFitter />

@@ -4,6 +4,15 @@ import '../App.css';
 function Research() {
   const publications = [
     {
+      id: 2,
+      title: 'Do we Need Dozens of Methods for Real World Missing Value Imputation?',
+      authors: 'K. Grzesiak, C. Muller, J. Josse, J. Näf',
+      venue: 'Preprint on Arxiv',
+      link: 'https://arxiv.org/abs/2511.04833',
+      stamp: 'Preprint',
+      repo: 'https://github.com/ChristopheMuller/benchmark'
+    },
+    {
       id: 1,
       title: 'Graph-based multi-agent reinforcement learning for railway infrastructure decision support',
       authors: 'G. Arcieri, G. Duthé, C. Muller, D. Haener, K. Papakonstantinou, D. Straub, E. Chatzi',
@@ -16,19 +25,12 @@ function Research() {
       id: 2,
       title: 'When Pattern-by-Pattern Works: Theoretical and Empirical Insights for Logistic Models with Missing Values',
       authors: 'C. Muller, E. Scornet, J. Josse',
-      venue: 'Preprint on HAL',
-      link: 'https://hal.science/view/index/docid/5150753',
+      venue: 'Preprint on Arxiv',
+      link: 'https://arxiv.org/abs/2507.13024',
       stamp: 'Preprint',
       repo: 'https://github.com/ChristopheMuller/logistic_with_NAs'
     },
-    // {
-    //   id: 3,
-    //   title: 'Another Dummy Publication',
-    //   authors: 'Author D, Author E',
-    //   venue: 'Dummy Journal',
-    //   link: '#',
-    //   stamp: 'Journal'
-    // }
+
     // You can add more publications here
   ];
 
