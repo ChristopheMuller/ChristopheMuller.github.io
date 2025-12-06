@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../App.css';
 
 function Research() {
@@ -10,7 +11,8 @@ function Research() {
       venue: 'Preprint on Arxiv.',
       link: 'https://doi.org/10.48550/arXiv.2511.04833',
       stamp: 'Preprint',
-      repo: 'https://github.com/ChristopheMuller/benchmark'
+      repo: 'https://github.com/ChristopheMuller/benchmark',
+      hasInteractive: true
     },
     {
       id: 1,
@@ -22,7 +24,7 @@ function Research() {
       repo: 'https://github.com/ChristopheMuller/MARL_optimal_maintenance_graph_railway_network'
     },
     {
-      id: 2,
+      id: 3,
       title: 'When Pattern-by-Pattern Works: Theoretical and Empirical Insights for Logistic Models with Missing Values',
       authors: 'C. Muller, E. Scornet, J. Josse',
       venue: 'Preprint on Arxiv.',
@@ -30,8 +32,6 @@ function Research() {
       stamp: 'Preprint',
       repo: 'https://github.com/ChristopheMuller/logistic_with_NAs'
     },
-
-    // You can add more publications here
   ];
 
   const getStampClassName = (stamp) => {
@@ -62,6 +62,11 @@ function Research() {
               <a href={pub.link} target="_blank" rel="noopener noreferrer" className="research-btn">Read Paper</a>
               {pub.repo && (
                 <a href={pub.repo} target="_blank" rel="noopener noreferrer" className="research-btn github">GitHub</a>
+              )}
+              {pub.hasInteractive && (
+                <Link to="/research/imputation-benchmark" className="research-btn interactive">
+                  View Interactive Summary
+                </Link>
               )}
             </div>
           </div>
