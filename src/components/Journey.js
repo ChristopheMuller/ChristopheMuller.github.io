@@ -35,7 +35,7 @@ const journeyEvents = [
   {
     year: 'Until 2019',
     title: 'Formative Years in Belgium',
-    description: 'Foundational education and early experiences, including being a six-time semi-finalist of the Mathematical Olympiad of Belgium.',
+    description: 'Foundational education and home.',
     icon: '🇧🇪'
   }
 ];
