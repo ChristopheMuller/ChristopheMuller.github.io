@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.ab0ed6bb.css",
-    "main.js": "/static/js/main.c68f730e.js",
-    "index.html": "/index.html",
-    "main.ab0ed6bb.css.map": "/static/css/main.ab0ed6bb.css.map",
-    "main.c68f730e.js.map": "/static/js/main.c68f730e.js.map"
+    "main.css": "/ChristopheMuller.github.io/static/css/main.ab0ed6bb.css",
+    "main.js": "/ChristopheMuller.github.io/static/js/main.02ecfbfe.js",
+    "index.html": "/ChristopheMuller.github.io/index.html",
+    "main.ab0ed6bb.css.map": "/ChristopheMuller.github.io/static/css/main.ab0ed6bb.css.map",
+    "main.02ecfbfe.js.map": "/ChristopheMuller.github.io/static/js/main.02ecfbfe.js.map"
   },
   "entrypoints": [
     "static/css/main.ab0ed6bb.css",
-    "static/js/main.c68f730e.js"
+    "static/js/main.02ecfbfe.js"
   ]
 }
