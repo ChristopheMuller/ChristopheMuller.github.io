@@ -242,7 +242,7 @@ function ImputationPaper() {
                                 <span className="label">Pointwise Error (RMSE)</span>
                                 <span className="value">{metrics.rmse ? metrics.rmse : '---'}</span>
                                 <span className="sub">
-                                    {imputationType === 'regression' ? "Artificially Low (Biased)" : "Realistic Error"}
+                                    {imputationType === 'regression' ? "Artificially Low" : "Realistic Error"}
                                 </span>
                             </div>
                             {/* ENERGY METRIC */}
