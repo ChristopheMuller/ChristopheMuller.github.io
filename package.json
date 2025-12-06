@@ -1,7 +1,6 @@
 {
   "name": "temp",
   "version": "0.1.0",
-  "homepage": "https://ChristopheMuller.github.io/ChristopheMuller.github.io",
   "private": true,
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
