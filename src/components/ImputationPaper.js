@@ -192,10 +192,7 @@ function ImputationPaper() {
                 <div className="badge">arXiv:2511.04833v1 [stat.CO]</div>
                 <h1>Do We Need <span className="highlight">Dozens of Methods</span> for Imputation?</h1>
                 <p className="authors">K. Grzesiak, C. Muller, J. Josse, J. Näf (2025)</p>
-                <div className="hero-actions">
-                    <a href="#simulator" className="action-btn primary">Interactive Paradox</a>
-                    <a href="#results" className="action-btn secondary">Benchmark Results</a>
-                </div>
+
             </section>
 
             {/* SIMULATOR SECTION */}
