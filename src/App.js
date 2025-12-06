@@ -1,5 +1,5 @@
-import React from 'react';
-import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+import React, { useEffect } from 'react'; // Import useEffect
+import { HashRouter as Router, Routes, Route, useLocation } from 'react-router-dom'; // Import useLocation
 import './App.css';
 import Header from './components/Header';
 import Hero from './components/Hero';
@@ -9,6 +9,18 @@ import Contact from './components/Contact';
 import Research from './components/Research';
 import Footer from './components/Footer';
 import ImputationPaper from './components/ImputationPaper';
+
+// 1. Create this helper component
+function ScrollToTop() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    // "0, 0" means top left of the screen
+    window.scrollTo(0, 0);
+  }, [pathname]); // Runs every time the URL path changes
+
+  return null;
+}
 
 function HomePage() {
   return (
@@ -25,6 +37,9 @@ function HomePage() {
 function App() {
   return (
     <Router>
+      {/* 2. Add it inside the Router, before your content */}
+      <ScrollToTop />
+
       <div className="App">
         <Header />
         <main>
