@@ -5,8 +5,17 @@ import '../App.css';
 function Research() {
   const publications = [
     {
+      id: 3,
+      title: 'When Pattern-by-Pattern Works: Theoretical and Empirical Insights for Logistic Models with Missing Values. (2025)',
+      authors: 'C. Muller, E. Scornet, J. Josse',
+      venue: 'Preprint on Arxiv.',
+      link: 'https://doi.org/10.48550/arXiv.2507.13024',
+      stamp: 'Preprint',
+      repo: 'https://github.com/ChristopheMuller/logistic_with_NAs'
+    },
+    {
       id: 2,
-      title: 'Do we Need Dozens of Methods for Real World Missing Value Imputation?',
+      title: 'Do we Need Dozens of Methods for Real World Missing Value Imputation? (2025)',
       authors: 'K. Grzesiak, C. Muller, J. Josse, J. Näf',
       venue: 'Preprint on Arxiv.',
       link: 'https://doi.org/10.48550/arXiv.2511.04833',
@@ -16,21 +25,12 @@ function Research() {
     },
     {
       id: 1,
-      title: 'Graph-based multi-agent reinforcement learning for railway infrastructure decision support',
+      title: 'Graph-based multi-agent reinforcement learning for railway infrastructure decision support. (2025)',
       authors: 'G. Arcieri, G. Duthé, C. Muller, D. Haener, K. Papakonstantinou, D. Straub, E. Chatzi',
       venue: '14th International Conference on Structural Safety and Reliability - ICOSSAR25.',
       link: 'https://doi.org/10.23967/icossar.2025.118',
       stamp: 'Conference',
       repo: 'https://github.com/ChristopheMuller/MARL_optimal_maintenance_graph_railway_network'
-    },
-    {
-      id: 3,
-      title: 'When Pattern-by-Pattern Works: Theoretical and Empirical Insights for Logistic Models with Missing Values',
-      authors: 'C. Muller, E. Scornet, J. Josse',
-      venue: 'Preprint on Arxiv.',
-      link: 'https://doi.org/10.48550/arXiv.2507.13024',
-      stamp: 'Preprint',
-      repo: 'https://github.com/ChristopheMuller/logistic_with_NAs'
     },
   ];
 
@@ -62,11 +62,6 @@ function Research() {
               <a href={pub.link} target="_blank" rel="noopener noreferrer" className="research-btn">Read Paper</a>
               {pub.repo && (
                 <a href={pub.repo} target="_blank" rel="noopener noreferrer" className="research-btn github">GitHub</a>
-              )}
-              {pub.hasInteractive && (
-                <Link to="/research/imputation-benchmark" className="research-btn interactive">
-                  View Interactive Summary
-                </Link>
               )}
             </div>
           </div>
