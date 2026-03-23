@@ -31,26 +31,32 @@ const Typewriter = ({ words, delay = 150, deleteDelay = 75, waitDelay = 2000 }) 
 
     if (isDeleting) {
       if (text === lcp) {
-        const randomPause = delay * (1 + Math.random() * 5);
+        // Pause before typing next word (after deleting to LCP)
+        const randomPause = delay * (0.5 + Math.random() * 10);
         timer = setTimeout(() => {
           setIsDeleting(false);
           setWordIndex(nextIndex);
         }, randomPause);
       } else {
+        // Delete speed per character: slightly random (e.g. 80% to 120%)
+        const randomDeleteDelay = deleteDelay * (0.8 + Math.random() * 0.4);
         timer = setTimeout(() => {
           setText(currentWord.substring(0, text.length - 1));
-        }, deleteDelay);
+        }, randomDeleteDelay);
       }
     } else {
       if (text === currentWord) {
-        const randomWait = waitDelay * (0.75 + Math.random() * 0.5);
+        // Break after typing a word: 10% to 200% of waitDelay
+        const randomWait = waitDelay * (0.1 + Math.random() * 1.9);
         timer = setTimeout(() => {
           setIsDeleting(true);
         }, randomWait);
       } else {
+        // Typing speed per character: random (e.g. 40% to 160%)
+        const randomDelay = delay * (0.4 + Math.random() * 1.2);
         timer = setTimeout(() => {
           setText(currentWord.substring(0, text.length + 1));
-        }, delay);
+        }, randomDelay);
       }
     }
 
