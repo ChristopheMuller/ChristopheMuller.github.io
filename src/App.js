@@ -5,6 +5,7 @@ import Header from './components/Header';
 import Hero from './components/Hero';
 import About from './components/About';
 import Journey from './components/Journey';
+import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Research from './components/Research';
 import Footer from './components/Footer';
@@ -29,6 +30,7 @@ function HomePage() {
       <About />
       <Journey />
       <Research />
+      <Projects />
       <Contact />
     </>
   );
