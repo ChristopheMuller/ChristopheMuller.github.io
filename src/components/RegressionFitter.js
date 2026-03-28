@@ -83,14 +83,14 @@ const RegressionFitter = () => {
     setCoefficients(beta.flat()); // Flatten the [ [b0], [b1], ... ] to [b0, b1, ...]
   }, []); // Empty dependency array because helpers are stable and degree is fixed
 
-  // Evaluate the polynomial at a given x
+  // Evaluate the polynomial at a given x using Horner's method
   const evaluatePolynomial = (x, coeffs) => {
-    if (!coeffs) return 0;
-    let y = 0;
-    for (let i = 0; i < coeffs.length; i++) {
-      y += coeffs[i] * Math.pow(x, i);
+    if (!coeffs || coeffs.length === 0) return 0;
+    let result = coeffs[coeffs.length - 1];
+    for (let i = coeffs.length - 2; i >= 0; i--) {
+      result = result * x + coeffs[i];
     }
-    return y;
+    return result;
   };
 
   // --- Canvas Drawing Logic ---
@@ -126,7 +126,8 @@ const RegressionFitter = () => {
       ctx.lineWidth = 1.5;
 
       ctx.moveTo(0, evaluatePolynomial(0, coefficients));
-      for (let x = 0; x <= clientWidth; x += 1) {
+      const STEP = 5;
+      for (let x = 0; x <= clientWidth; x += STEP) {
         const y = evaluatePolynomial(x, coefficients);
         if (y >= -1000 && y <= clientHeight + 1000) {
             ctx.lineTo(x, y);
@@ -134,6 +135,16 @@ const RegressionFitter = () => {
             ctx.moveTo(x, y);
         }
       }
+
+      // Ensure the line is drawn to the final edge if clientWidth is not a multiple of STEP
+      const finalX = clientWidth;
+      const finalY = evaluatePolynomial(finalX, coefficients);
+      if (finalY >= -1000 && finalY <= clientHeight + 1000) {
+          ctx.lineTo(finalX, finalY);
+      } else {
+          ctx.moveTo(finalX, finalY);
+      }
+
       ctx.stroke();
     }
   }, [points, coefficients]); // Dependencies: points and coefficients
