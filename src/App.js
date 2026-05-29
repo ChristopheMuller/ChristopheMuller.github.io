@@ -4,12 +4,9 @@ import './App.css';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import About from './components/About';
-import Journey from './components/Journey';
-import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Research from './components/Research';
 import Footer from './components/Footer';
-import ImputationPaper from './components/ImputationPaper';
 
 // 1. Create this helper component
 function ScrollToTop() {
@@ -28,9 +25,7 @@ function HomePage() {
     <>
       <Hero />
       <About />
-      <Journey />
       <Research />
-      <Projects />
       <Contact />
     </>
   );
@@ -47,7 +42,6 @@ function App() {
         <main>
           <Routes>
             <Route path="/" element={<HomePage />} />
-            <Route path="/research/imputation-benchmark" element={<ImputationPaper />} />
           </Routes>
         </main>
         <Footer />

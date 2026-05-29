@@ -44,9 +44,7 @@ function Header() {
         </div>
         <ul className={`nav-links ${menuOpen ? 'open' : ''}`}>
           <li><a href="#about" onClick={(e) => scrollToSection(e, 'about')}>About</a></li>
-          <li><a href="#journey" onClick={(e) => scrollToSection(e, 'journey')}>Journey</a></li>
           <li><a href="#research" onClick={(e) => scrollToSection(e, 'research')}>Research</a></li>
-          <li><a href="#projects" onClick={(e) => scrollToSection(e, 'projects')}>Projects</a></li>
           <li><a href="https://drive.google.com/file/d/1yv1W7eKhy0TpWrzRbeUlMVBZvCY3nFib/view?usp=sharing" target="_blank" rel="noopener noreferrer">CV</a></li>
           <li><a href="#contact" onClick={(e) => scrollToSection(e, 'contact')}>Contact</a></li>
         </ul>
