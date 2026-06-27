@@ -4,7 +4,7 @@ import './App.css';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import About from './components/About';
-import Contact from './components/Contact';
+import Connect from './components/Connect';
 import Research from './components/Research';
 import Footer from './components/Footer';
 
@@ -26,7 +26,7 @@ function HomePage() {
       <Hero />
       <About />
       <Research />
-      <Contact />
+      <Connect />
     </>
   );
 }

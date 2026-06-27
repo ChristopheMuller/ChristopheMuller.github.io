@@ -181,19 +181,96 @@ body {
   text-align: center;
 }
 
-/* Contact Section */
-.contact-section {
+/* Connect Section */
+.connect-section {
   position: relative;
   z-index: 1;
   padding-bottom: 350px;
   /* Add space for the regression fitter below */
 }
 
-.contact-info {
+.connect-actions {
   position: relative;
-  /* Ensure z-index works */
   z-index: 2;
-  /* Place contact info above the regression fitter */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 20px 0;
+}
+
+.email-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 20px;
+  font-size: 1em;
+  font-weight: 500;
+  color: #444;
+  background-color: transparent;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: color 0.3s ease, border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.email-button:hover {
+  color: #007bff;
+  border-color: #007bff;
+  background-color: rgba(0, 123, 255, 0.06);
+}
+
+.email-button .email-icon {
+  font-size: 1.1em;
+  line-height: 1;
+}
+
+.email-hint {
+  color: #777;
+  font-size: 0.9em;
+}
+
+/* Social icon links (shared: header + connect section) */
+.social-icons {
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.social-icons a {
+  display: inline-flex;
+  color: #333;
+  transition: color 0.3s ease, transform 0.15s ease;
+}
+
+.social-icons a:hover {
+  color: #007bff;
+  transform: translateY(-2px);
+}
+
+.social-icons svg {
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
+}
+
+.connect-social {
+  position: relative;
+  z-index: 2;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.connect-social svg {
+  width: 30px;
+  height: 30px;
+}
+
+.nav-social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .map-section h2 {

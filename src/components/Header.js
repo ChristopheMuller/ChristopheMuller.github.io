@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import '../App.css';
+import SocialLinks from './SocialLinks';
 
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -46,7 +47,7 @@ function Header() {
           <li><a href="#about" onClick={(e) => scrollToSection(e, 'about')}>About</a></li>
           <li><a href="#research" onClick={(e) => scrollToSection(e, 'research')}>Research</a></li>
           <li><a href="https://drive.google.com/file/d/1yv1W7eKhy0TpWrzRbeUlMVBZvCY3nFib/view?usp=sharing" target="_blank" rel="noopener noreferrer">CV</a></li>
-          <li><a href="#contact" onClick={(e) => scrollToSection(e, 'contact')}>Contact</a></li>
+          <li className="nav-social"><SocialLinks className="header-social" /></li>
         </ul>
       </nav>
     </header>
