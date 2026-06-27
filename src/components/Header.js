@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import '../App.css';
 import SocialLinks from './SocialLinks';
 
-function Header() {
+function Header({ onNameClick }) {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -13,6 +13,7 @@ function Header() {
   const scrollToTop = () => {
     window.scrollTo(0, 0);
     setMenuOpen(false);
+    if (onNameClick) onNameClick();
   };
 
   const scrollToSection = (e, id) => {

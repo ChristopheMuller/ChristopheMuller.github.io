@@ -279,19 +279,28 @@ body {
   color: #2c3e50;
 }
 
-/* Game of Life Section */
-.game-of-life-section {
-  padding: 60px 20px;
-  background-color: #2c3e50;
-  /* Dark background for contrast */
-  text-align: center;
-  color: #ecf0f1;
+/* Game of Life easter-egg background overlay (5 clicks on the name to toggle) */
+.gol-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  /* Above content so it drifts over every section, below the sticky header */
+  z-index: 900;
+  opacity: 0;
+  transition: opacity 1.2s ease;
 }
 
-.game-of-life-section h2 {
-  margin-bottom: 20px;
-  font-size: 2.5em;
-  color: #ecf0f1;
+.gol-background.active {
+  opacity: 1;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .gol-background {
+    transition: none;
+  }
 }
 
 .game-description {
@@ -750,6 +759,9 @@ body {
 /* Profile Picture Styles */
 .profile-picture-container {
   margin-bottom: 1.5rem;
+  /* Sit above the Game of Life overlay (z-index 900) so it never covers the photo */
+  position: relative;
+  z-index: 950;
 }
 
 .profile-picture {
