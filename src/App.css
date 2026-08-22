@@ -15,8 +15,12 @@ body {
   margin: 0;
   padding: 0;
   width: 100%;
-  overflow-x: hidden;
+  overflow-x: clip;
   font-family: 'Inter', sans-serif;
+}
+
+.App {
+  overflow-x: clip;
 }
 
 section[id],
@@ -40,8 +44,7 @@ section[id],
   background-color: #ffffff;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   padding: 15px 20px;
-  position: sticky;
-  top: 0;
+  position: relative;
   z-index: 1000;
 }
 

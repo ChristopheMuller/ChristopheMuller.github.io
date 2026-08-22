@@ -174,10 +174,9 @@ const RegressionFitter = () => {
     calculatePolynomialRegression(points);
   }, [points, drawCanvas, calculatePolynomialRegression]);
 
-  // Add point on canvas click
-  const handleCanvasClick = (event) => {
-    event.preventDefault();
+  const handlePointerDown = (event) => {
     const canvas = canvasRef.current;
+    if (!canvas) return;
     const rect = canvas.getBoundingClientRect();
     const x = event.clientX - rect.left;
     const y = event.clientY - rect.top;
@@ -185,7 +184,6 @@ const RegressionFitter = () => {
     setPoints(prevPoints => [...prevPoints, { x, y }]);
   };
 
-  // Handle canvas resize (re-draws but doesn't re-generate initial points)
   useEffect(() => {
     const handleResize = () => {
       drawCanvas();
@@ -194,15 +192,15 @@ const RegressionFitter = () => {
     return () => window.removeEventListener('resize', handleResize);
   }, [drawCanvas]);
 
-
   return (
     <section id="regression-fitter" className="regression-fitter-section">
       <div className="canvas-wrapper">
-          <canvas
-              ref={canvasRef}
-              className="regression-canvas"
-              onClick={handleCanvasClick}
-          ></canvas>
+        <canvas
+          ref={canvasRef}
+          className="regression-canvas"
+          onPointerDown={handlePointerDown}
+          style={{ touchAction: 'manipulation' }}
+        />
       </div>
     </section>
   );
