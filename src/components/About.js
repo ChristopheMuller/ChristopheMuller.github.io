@@ -21,7 +21,7 @@ function About() {
         </p>
 
         <p className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
-          My other professional experience includes contributing to the future of European banking supervision as a trainee at the European Central Bank and working as a Junior Data Analyst at Hornet, a queer social network.
+          My other professional experience includes contributing to the future of European banking supervision as a trainee at the European Central Bank.
         </p>
       </div>
     </section>
