@@ -78,8 +78,10 @@ section[id],
   transition: color 0.3s ease;
 }
 
-.nav-links a:hover {
+.nav-links a:hover,
+.nav-links a.active {
   color: #007bff;
+  font-weight: 600;
 }
 
 /* Mobile menu toggle */

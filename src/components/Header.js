@@ -1,18 +1,20 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import '../App.css';
 import SocialLinks from './SocialLinks';
 
 function Header({ onNameClick }) {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState('');
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
 
   const scrollToTop = () => {
-    window.scrollTo(0, 0);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
     setMenuOpen(false);
+    setActiveSection('');
     if (onNameClick) onNameClick();
   };
 
@@ -20,14 +22,48 @@ function Header({ onNameClick }) {
     e.preventDefault();
     const element = document.getElementById(id);
     if (element) {
-      // Optional: adjust offset if you have a sticky header
       element.scrollIntoView({ behavior: 'smooth' });
     } else {
-      // If not on the homepage, navigate to the homepage with hash
       window.location.hash = `#${id}`;
     }
     setMenuOpen(false);
   };
+
+  useEffect(() => {
+    const sectionIds = ['about', 'research'];
+    const sections = sectionIds
+      .map((id) => document.getElementById(id))
+      .filter(Boolean);
+
+    const handleScroll = () => {
+      if (window.scrollY < 120) {
+        setActiveSection('');
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setActiveSection(entry.target.id);
+          }
+        });
+      },
+      {
+        rootMargin: '-20% 0px -55% 0px',
+        threshold: 0,
+      }
+    );
+
+    sections.forEach((section) => observer.observe(section));
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+      observer.disconnect();
+    };
+  }, []);
 
   return (
     <header className="header">
@@ -45,9 +81,33 @@ function Header({ onNameClick }) {
           </div>
         </div>
         <ul className={`nav-links ${menuOpen ? 'open' : ''}`}>
-          <li><a href="#about" onClick={(e) => scrollToSection(e, 'about')}>About</a></li>
-          <li><a href="#research" onClick={(e) => scrollToSection(e, 'research')}>Research</a></li>
-          <li><a href="https://drive.google.com/file/d/1yv1W7eKhy0TpWrzRbeUlMVBZvCY3nFib/view?usp=sharing" target="_blank" rel="noopener noreferrer">CV</a></li>
+          <li>
+            <a
+              href="#about"
+              className={activeSection === 'about' ? 'active' : ''}
+              onClick={(e) => scrollToSection(e, 'about')}
+            >
+              About
+            </a>
+          </li>
+          <li>
+            <a
+              href="#research"
+              className={activeSection === 'research' ? 'active' : ''}
+              onClick={(e) => scrollToSection(e, 'research')}
+            >
+              Research
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://drive.google.com/file/d/1yv1W7eKhy0TpWrzRbeUlMVBZvCY3nFib/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              CV
+            </a>
+          </li>
           <li className="nav-social"><SocialLinks className="header-social" /></li>
         </ul>
       </nav>
