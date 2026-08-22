@@ -111,33 +111,87 @@ body {
 
 /* Mobile menu styles */
 @media (max-width: 768px) {
+  .header {
+    padding: 10px 16px;
+  }
+
   .header nav {
     flex-direction: column;
     align-items: flex-start;
   }
 
+  .logo {
+    font-size: 1.3em;
+    height: 28px;
+    display: flex;
+    align-items: center;
+  }
+
   .menu-toggle {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: absolute;
+    top: 10px;
+    right: 16px;
+    height: 28px;
+  }
+
+  .hamburger {
+    width: 24px;
+    height: 18px;
+    position: relative;
+  }
+
+  .hamburger span {
+    height: 2.5px;
+    border-radius: 2px;
+  }
+
+  .hamburger span:nth-child(1) {
+    top: 0px;
+  }
+
+  .hamburger span:nth-child(2) {
+    top: 7.5px;
+  }
+
+  .hamburger span:nth-child(3) {
     top: 15px;
-    right: 20px;
+  }
+
+  .hamburger.open span:nth-child(1) {
+    top: 7.5px;
+    transform: rotate(135deg);
+  }
+
+  .hamburger.open span:nth-child(2) {
+    opacity: 0;
+    left: -40px;
+  }
+
+  .hamburger.open span:nth-child(3) {
+    top: 7.5px;
+    transform: rotate(-135deg);
   }
 
   .nav-links {
     flex-direction: column;
     width: 100%;
-    margin-top: 15px;
+    margin-top: 0;
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.3s ease-out;
+    transition: max-height 0.3s ease-out, margin-top 0.3s ease-out;
   }
 
   .nav-links.open {
+    margin-top: 12px;
     max-height: 300px;
+    padding-bottom: 6px;
   }
 
   .nav-links li {
-    margin: 10px 0;
+    margin: 8px 0;
     text-align: center;
   }
 }
@@ -189,6 +243,12 @@ body {
   /* Add space for the regression fitter below */
 }
 
+@media (max-width: 768px) {
+  .connect-section {
+    padding-bottom: 160px;
+  }
+}
+
 .connect-actions {
   position: relative;
   z-index: 2;
@@ -198,6 +258,13 @@ body {
   flex-wrap: wrap;
   gap: 12px;
   margin: 20px 0;
+}
+
+@media (max-width: 768px) {
+  .connect-actions {
+    margin: 16px 0;
+    gap: 10px;
+  }
 }
 
 .email-button {
@@ -229,6 +296,13 @@ body {
 .email-hint {
   color: #777;
   font-size: 0.9em;
+  word-break: break-word;
+}
+
+@media (max-width: 768px) {
+  .email-hint {
+    font-size: 0.85em;
+  }
 }
 
 /* Social icon links (shared: header + connect section) */
@@ -559,6 +633,12 @@ body {
   pointer-events: none;
 }
 
+@media (max-width: 768px) {
+  .regression-fitter-section {
+    height: 180px;
+  }
+}
+
 /* Canvas Wrapper for Full Screen and Pronounced Fade Effect */
 .canvas-wrapper {
   position: absolute;
@@ -605,6 +685,13 @@ body {
   padding: 20px;
   text-align: center;
   border-top: 1px solid #ccc;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 16px 12px;
+    font-size: 0.85em;
+  }
 }
 
 .footer .social-links {
@@ -716,6 +803,11 @@ body {
   background-color: transparent;
 }
 
+@media (max-width: 768px) {
+  .minimal-research-section {
+    padding: 40px 16px;
+  }
+}
 
 .minimal-research-list {
   list-style: none;
@@ -724,6 +816,12 @@ body {
   display: flex;
   flex-direction: column;
   gap: 30px; 
+}
+
+@media (max-width: 768px) {
+  .minimal-research-list {
+    gap: 20px;
+  }
 }
 
 .minimal-research-item {

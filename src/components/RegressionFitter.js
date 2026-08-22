@@ -4,8 +4,7 @@ import '../App.css';
 const RegressionFitter = () => {
   const canvasRef = useRef(null);
   const [points, setPoints] = useState([]); // Points will be initialized in useEffect
-  const [coefficients, setCoefficients] = useState(null); // [b0, b1, b2, ...]
-  const polynomialDegree = 2; // Fixed to polynomial degree 2
+  const [coefficients, setCoefficients] = useState(null);
 
   const POINT_RADIUS = 5;
   const POINT_COLOR = '#34495e';
