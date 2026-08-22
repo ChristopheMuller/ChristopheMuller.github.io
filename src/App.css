@@ -1,13 +1,38 @@
 /* GLOBAL RESET: Ensure full page width and prevent default margins/padding */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 60px;
+}
+
+@media (max-width: 768px) {
+  html {
+    scroll-padding-top: 48px;
+  }
+}
+
 html,
 body {
   margin: 0;
   padding: 0;
   width: 100%;
   overflow-x: hidden;
-  /* Prevents horizontal scrollbar if elements go off-screen */
   font-family: 'Inter', sans-serif;
-  /* Added Inter font */
+}
+
+section[id],
+#about,
+#research,
+#connect {
+  scroll-margin-top: 60px;
+}
+
+@media (max-width: 768px) {
+  section[id],
+  #about,
+  #research,
+  #connect {
+    scroll-margin-top: 48px;
+  }
 }
 
 /* Header Styles */
