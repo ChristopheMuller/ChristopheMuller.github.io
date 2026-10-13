@@ -4,6 +4,22 @@ import '../App.css';
 function Research() {
   const publications = [
     {
+      id: 5,
+      title: 'ProximalFM: Amortized Proximal Causal Inference under Hidden Confounding',
+      authors: 'C. Muller, A. Kharel, A. Luedtke, C. Park, E. Tchetgen Tchetgen, J. L. Gamella, R. Krishnan, R. Silva, J. Zeitler',
+      date: '2026',
+      link: 'https://arxiv.org/abs/2610.08078',
+      repo: 'https://github.com/ChristopheMuller/ProximalFM',
+      huggingface: 'https://huggingface.co/christophemuller/ProximalFM/'
+    },
+    {
+      id: 4,
+      title: 'Graph-Based Inference and Topology-Aware Multi-Agent Reinforcement Learning for Large-Scale Railway Network Management',
+      authors: 'G. Arcieri, G. Duthé, C. Muller, K. Papakonstantinou, D. Straub, E. Chatzi',
+      date: '2026',
+      link: 'https://arxiv.org/abs/2609.30150'
+    },
+    {
       id: 3,
       title: 'When Pattern-by-Pattern Works: Theoretical and Empirical Insights for Logistic Models with Missing Values.',
       authors: 'C. Muller, E. Scornet, J. Josse',
@@ -45,6 +61,9 @@ function Research() {
               <a href={pub.link} target="_blank" rel="noopener noreferrer">[Paper]</a>
               {pub.repo && (
                 <a href={pub.repo} target="_blank" rel="noopener noreferrer">[GitHub]</a>
+              )}
+              {pub.huggingface && (
+                <a href={pub.huggingface} target="_blank" rel="noopener noreferrer">[Hugging Face]</a>
               )}
             </div>
           </li>
